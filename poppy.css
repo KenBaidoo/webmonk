@@ -1,0 +1,91 @@
+:root {
+    --poppy-notify : #22d822;
+    --poppy-warning: #ffb42b;
+    --poppy-error: #ff6d6d;
+    --poppy-background: #00000087;
+    --poppy-default: #fff;
+    --poppy-accent: #A7C7E7;
+}
+
+.poppy-holder {
+    display: flex; 
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    background-color: var(--poppy-background);
+	z-index: 9999999999 !important;
+}
+
+.poppy-popup {
+    margin: auto;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    -webkit-animation-name: pop;
+    -webkit-animation-duration: 2s;
+    animation-name: pop;
+    animation-duration: 2s;
+}
+
+.poppy-p0 {
+    margin: 0;
+}
+
+.poppy-btn {
+    background-color: var(--poppy-default);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s all;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.poppy-btn:hover {
+    transition: 0.2s all;
+    background-color: var(--poppy-accent);
+    border-color: var(--poppy-background);
+}
+
+.poppy-default {
+    background-color: var(--poppy-default);
+    border: 1px solid var(--poppy-default);
+    box-shadow: 0 0 5px 5px #676767;
+    color: black;
+}
+
+.poppy-notification {
+    background-color: var(--poppy-notify);
+    border: 1px solid var(--poppy-notify);
+}
+
+.poppy-warning {
+    background-color: var(--poppy-warning);
+    border: 1px solid var(--poppy-warning);
+}
+
+.poppy-error {
+    background-color: var(--poppy-error);
+    border: 1px solid var(--poppy-error);
+}
+
+
+@-webkit-keyframes pop {
+    0%   {bottom: -100px; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
+  
+@keyframes pop {
+    0%   {bottom: -100px; opacity: 0;}
+    100% {bottom: 0; opacity: 1;}
+}
