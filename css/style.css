@@ -217,6 +217,11 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
     box-sizing: border-box;
 }
 
+#fixed-icons{
+	position: fixed;
+	top: 400px;
+}
+
 html{
 	overflow-y: scroll;
     -ms-overflow-style: scrollbar;
