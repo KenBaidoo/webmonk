@@ -109,7 +109,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 	border-radius:50px;
 	text-align:center;
 	font-size:30px;
-	box-shadow: 1px 6px 24px 0;
+	box-shadow: 1px 6px 24px 0 rgba(7,94,84,.24);
 	z-index:100;
 }
 
@@ -203,6 +203,12 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
     margin: 0;
     background: none;
 }
+
+#fixed-icons{
+	position: fixed;
+	top: 400px;
+}
+
 
 .full-wrapper {
     margin: 0 2%;
