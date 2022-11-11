@@ -99,7 +99,7 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 -----------------------------------------------------------------*/
 
 .whatsapp{
-	position:fixed;
+	position:relative;
 	display: block;
 	width:60px;
 	height:60px;
