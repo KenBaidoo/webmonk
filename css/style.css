@@ -99,6 +99,9 @@ Section Text:       15px/1.7 "Open Sans", arial, sans-serif;
 -----------------------------------------------------------------*/
 
 .whatsapp{
+	font-family: "Font Awesome 5 Brands";
+	content: "\f232";
+	font-weight: 400;
 	position:fixed;
 	width:60px;
 	height:60px;
